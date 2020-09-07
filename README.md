@@ -1,1 +1,3 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+#My Image Repository
+
+This is a Rails CRUD app enabling the user to *store images*, add *image tags* to them. Users can also *search* for images based on their descriptions, filenames and tags. Images are hosted on Cloudinary.
