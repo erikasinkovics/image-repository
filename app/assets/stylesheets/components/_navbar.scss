@@ -1,12 +1,18 @@
-.navbar-lewagon {
+.navbar-image-repo {
   justify-content: space-between;
-  background: white;
+  background: rgba(245, 245, 245, 0.3);
+  backdrop-filter: blur(10px);
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-image-repo .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-image-repo .navbar-brand img {
+  display: none;
+}
+
+.hamburger {
+  width: 35px;
+  // border-radius: 50%;
 }
