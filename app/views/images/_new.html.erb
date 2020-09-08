@@ -1,0 +1,5 @@
+<%= simple_form_for @image, url: user_images_path(current_user), method: :post do |f| %>
+  <%= f.input :description, as: :string %>
+  <%= f.input :photo, as: :file, public_id: "image-repository-project" %>
+  <%= f.submit "Upload Image" %>
+<% end %>
