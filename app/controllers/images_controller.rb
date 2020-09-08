@@ -1,11 +1,9 @@
 class ImagesController < ApplicationController
   before_action :set_image, only: [:show, :destroy]
+  skip_before_action :authenticate_user!, only: [:index]
 
   def index
     @images = Image.all
-  end
-
-  def show
   end
 
   def new
@@ -29,7 +27,7 @@ class ImagesController < ApplicationController
   def destroy
     @image.photo.purge
     @image.destroy
-    redirect_to user_images_path(params[:user_id]), :notice => "Your image has been deleted."
+    redirect_to user_images_path(current_user.id), :notice => "Your image has been deleted."
   end
 
   private
