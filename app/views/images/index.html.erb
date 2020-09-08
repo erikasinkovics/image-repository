@@ -1,2 +1,10 @@
-<h1>Images#index</h1>
-<p>Find me in app/views/images/index.html.erb</p>
+<div class="container">
+  <h1>Browse images</h1>
+  <div class="image-container">
+    <% @images.each do |image| %>
+      <%= render 'image_card', { image: image } %>
+    <% end %>
+  </div>
+</div>
+
+

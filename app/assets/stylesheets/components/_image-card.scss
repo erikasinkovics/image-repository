@@ -1,0 +1,99 @@
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+.image-card {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  width: 250px;
+  margin: 8px auto;
+  border-radius: 5px;
+  position: relative;
+}
+
+.image-card > img {
+  height: 300px;
+  width: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.image-card p {
+  font-size: 12px;
+  opacity: 0.5;
+  margin: 0;
+}
+
+.image-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  width: 100%;
+}
+
+.btn-image-delete {
+  padding: 4px 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  margin: 8px;
+  border-radius: 8px;
+  i {
+    color: white;
+  }
+  i:hover {
+    color: rgba(255, 255, 255, 0.5)
+  }
+}
+
+.image-tag-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 8px;
+}
+
+.image-tag {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+  padding: 4px 8px;
+  margin-right: 6px;
+  p {
+    color: white;
+  }
+  p:hover {
+
+  }
+}
+
+
+.image-card .image-data-text {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  color: rgba(255, 255, 255, 1);
+}

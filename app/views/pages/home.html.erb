@@ -1,6 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
 
-<%= link_to "Images#index", user_images_path(current_user) %>
-<br>
-<%= link_to "Images#new", new_user_image_path(current_user) %>
+<h1>Welcome to My Image Repository!</h1>
+<p>Feel free to browse the images uploaded by our creators, or log in to upload your own photos!</p>
+
+<% if user_signed_in? %>
+  <%= link_to "Images#index", user_images_path(current_user) %>
+  <br>
+  <%= link_to "Images#new", new_user_image_path(current_user) %>
+<% else %>
+  <%= link_to "Browse Image repository", images_path %>
+<% end %>
+

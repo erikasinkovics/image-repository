@@ -1,0 +1,26 @@
+
+<div class="image-card">
+  <%= cl_image_tag image.photo.key, height: 300, width: 250, crop: :fill %>
+  <div class="image-data">
+    <div class="image-data-text">
+      <h3><strong><%= image.description %></strong></h3>
+      <p><%= image.created_at.strftime("Uploaded on %d %b, %Y") %></p>
+      <p>by <%= image.user.email %></p>
+    </div>
+  </div>
+  <% if image.user == current_user %>
+    <div class="btn-image-delete">
+      <%= link_to image_path(image.id), method: :delete do %>
+        <i class="fas fa-trash-alt"></i>
+      <% end %>
+     </div>
+  <% end %>
+  <div class="image-tag-container">
+    <div class="image-tag">
+      <p>tag1</p>
+    </div>
+    <div class="image-tag">
+      <p>tag2</p>
+    </div>
+  </div>
+</div>
