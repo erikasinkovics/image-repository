@@ -1,1 +1,21 @@
 // Specific CSS for your home-page
+
+body {
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.8701855742296919) 27%, rgba(253,187,45,0) 81%), url("background-zenit.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  height: 100vh;
+}
+
+.home-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 170px;
+}
+
+.hero-container {
+  width: 45%;
+}
