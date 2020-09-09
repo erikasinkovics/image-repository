@@ -1,0 +1,30 @@
+.btn-blue {
+  padding: 8px 24px;
+  background-color: rgba(15, 113, 115, 1);
+  color: white;
+  border-radius: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn-blue:hover {
+  text-decoration: none;
+  background-color: rgba(15, 113, 115, 0.5);
+  color: white;
+}
+
+
+.btn-rose {
+  padding: 8px 24px;
+  background-color: rgba(244, 88, 102, 1);
+  color: white;
+  border-radius: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn-rose:hover {
+  text-decoration: none;
+  background-color: rgba(244, 88, 102, 0.5);
+  color: white;
+}
