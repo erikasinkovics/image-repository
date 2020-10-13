@@ -28,3 +28,26 @@
   background-color: rgba(244, 88, 102, 0.5);
   color: white;
 }
+
+.btn-white {
+  border-radius: 5px;
+  padding: 16px 24px;
+  color: black;
+  background-color: white;
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: -0.5px;
+}
+
+.btn-white-md {
+  border-radius: 5px;
+  padding: 8px 20px;
+  color: black;
+  background-color: white;
+  font-weight: 500;
+  font-size: 16px;
+  // letter-spacing: px;
+  a {
+    color: black;
+  }
+}

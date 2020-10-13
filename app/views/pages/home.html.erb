@@ -1,13 +1,7 @@
 <div class="container home-container">
   <div class="hero-container">
     <h1>Welcome to My Image Repository!</h1>
-    <p>Feel free to browse the images uploaded by our creators, or log in to upload your own photos!</p>
-    <div class="input-group mb-3 search-box">
-      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">Search</span>
-      </div>
-    </div>
+    <h2>Feel free to browse the images uploaded by our creators, or log in to upload your own photos!</h2>
  </div>
 
   <% if user_signed_in? %>
@@ -15,6 +9,6 @@
     <br>
     <%= link_to "Images#new", new_user_image_path(current_user) %>
   <% else %>
-    <%= link_to "Browse Image repository", images_path %>
+    <%= link_to "Create an account", new_user_registration_path, class: "btn-white" %>
   <% end %>
 </div>
